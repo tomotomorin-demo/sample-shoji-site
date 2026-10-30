@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>サンプル商事株式会社 | ニュースリリース</title>
+<style>
+  :root {
+    --navy: #0b2a4a;
+    --navy-2: #123d68;
+    --accent: #c8102e;
+    --text: #222;
+    --muted: #666;
+    --line: #dde3ea;
+    --bg: #ffffff;
+    --bg-2: #f4f6f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Meiryo UI", "Meiryo", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  a { color: var(--navy-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  .util { background: var(--bg-2); border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  .util .wrap { display: flex; justify-content: flex-end; gap: 20px; padding-top: 4px; padding-bottom: 4px; }
+
+  header.site { border-bottom: 1px solid var(--line); }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .logo { display: flex; align-items: center; gap: 12px; color: var(--navy); }
+  .logo-mark {
+    width: 40px; height: 40px; border-radius: 6px; background: var(--navy);
+    color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 18px; letter-spacing: .02em;
+  }
+  .logo-text { line-height: 1.2; }
+  .logo-text b { display: block; font-size: 20px; letter-spacing: .04em; }
+  .logo-text span { font-size: 11px; color: var(--muted); letter-spacing: .08em; }
+  nav.gnav { display: flex; gap: 28px; font-size: 14px; }
+  nav.gnav a { color: var(--text); padding: 26px 0; border-bottom: 3px solid transparent; }
+  nav.gnav a.on { border-bottom-color: var(--accent); color: var(--navy); font-weight: 700; }
+  nav.gnav a:hover { text-decoration: none; color: var(--navy-2); }
+
+  .hero {
+    background: linear-gradient(120deg, var(--navy) 0%, var(--navy-2) 70%, #1d5a92 100%);
+    color: #fff;
+  }
+  .hero .wrap { padding-top: 44px; padding-bottom: 44px; }
+  .hero .crumb { font-size: 12px; opacity: .8; }
+  .hero h1 { margin: 6px 0 0; font-size: 30px; letter-spacing: .06em; }
+  .hero p { margin: 4px 0 0; opacity: .85; font-size: 14px; }
+
+  main .wrap { display: grid; grid-template-columns: 1fr 260px; gap: 48px; padding-top: 40px; padding-bottom: 64px; }
+
+  .tabs { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .tabs span { font-size: 13px; padding: 4px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+  .tabs span.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+  ul.news { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  ul.news li { display: grid; grid-template-columns: 110px 96px 1fr; gap: 16px; align-items: baseline; padding: 16px 4px; border-bottom: 1px solid var(--line); }
+  .date { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+  .tag { font-size: 11px; text-align: center; border-radius: 3px; padding: 1px 0; color: #fff; background: #5b6b7d; }
+  .tag.ir { background: var(--navy-2); }
+  .tag.biz { background: #2f7a4f; }
+  .tag.new { background: var(--accent); }
+  ul.news a { color: var(--text); }
+  ul.news a:hover { color: var(--navy-2); }
+
+  .more { margin-top: 24px; text-align: right; font-size: 14px; }
+
+  aside .box { border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; margin-bottom: 20px; }
+  aside h2 { font-size: 14px; margin: 0 0 10px; color: var(--navy); border-left: 4px solid var(--accent); padding-left: 10px; }
+  aside ul { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  aside li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  aside li:last-child { border-bottom: 0; }
+  .stock { font-size: 13px; color: var(--muted); }
+  .stock b { display: block; font-size: 24px; color: var(--text); font-variant-numeric: tabular-nums; }
+
+  footer.site { background: var(--navy); color: #c9d4e0; font-size: 12px; }
+  footer.site .wrap { padding-top: 28px; padding-bottom: 28px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer.site a { color: #c9d4e0; }
+  .demo-note { opacity: .6; }
+
+  @media (max-width: 860px) {
+    nav.gnav { display: none; }
+    main .wrap { grid-template-columns: 1fr; }
+    ul.news li { grid-template-columns: 96px 80px; }
+    ul.news li a { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <a href="#">サイトマップ</a>
+    <a href="#">お問い合わせ</a>
+    <a href="#">English</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#">
+      <div class="logo-mark">S</div>
+      <div class="logo-text"><b>サンプル商事</b><span>SAMPLE SHOJI CO., LTD.</span></div>
+    </a>
+    <nav class="gnav">
+      <a href="#">企業情報</a>
+      <a href="#">事業紹介</a>
+      <a href="#">IR情報</a>
+      <a href="#" class="on">ニュース</a>
+      <a href="#">サステナビリティ</a>
+      <a href="#">採用情報</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="crumb">ホーム ＞ ニュース</div>
+    <h1>ニュースリリース</h1>
+    <p>サンプル商事グループの最新の取り組みをお知らせします。</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <section>
+      <div class="tabs">
+        <span class="on">すべて</span>
+        <span>お知らせ</span>
+        <span>IR</span>
+        <span>事業</span>
+      </div>
+      <ul class="news">
+        <li><span class="date">2026.10.28</span><span class="tag ir">IR</span><a href="#">2027年3月期 第2四半期決算短信〔日本基準〕（連結）</a></li>
+        <li><span class="date">2026.10.21</span><span class="tag biz">事業</span><a href="#">中部物流センターの稼働開始について</a></li>
+        <li><span class="date">2026.10.15</span><span class="tag new">お知らせ</span><a href="#">基幹システム更改に伴う受発注窓口の一部変更について</a></li>
+        <li><span class="date">2026.10.01</span><span class="tag">お知らせ</span><a href="#">組織変更および人事異動のお知らせ</a></li>
+        <li><span class="date">2026.09.24</span><span class="tag biz">事業</span><a href="#">東南アジアにおける食品原料調達の合弁会社設立に関するお知らせ</a></li>
+        <li><span class="date">2026.09.10</span><span class="tag ir">IR</span><a href="#">中期経営計画「SAMPLE 2028」の進捗について</a></li>
+        <li><span class="date">2026.08.29</span><span class="tag">お知らせ</span><a href="#">夏季休業期間のお知らせ</a></li>
+        <li><span class="date">2026.08.07</span><span class="tag ir">IR</span><a href="#">2027年3月期 第1四半期決算短信〔日本基準〕（連結）</a></li>
+      </ul>
+      <div class="more"><a href="#">ニュース一覧を見る ＞</a></div>
+    </section>
+
+    <aside>
+      <div class="box">
+        <h2>株価情報</h2>
+        <div class="stock">東証プライム（コード：0000）<b>2,418 円</b>2026/10/29 15:30 終値</div>
+      </div>
+      <div class="box">
+        <h2>IR資料</h2>
+        <ul>
+          <li><a href="#">決算説明会資料</a></li>
+          <li><a href="#">統合報告書 2026</a></li>
+          <li><a href="#">有価証券報告書</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>お取引先さまへ</h2>
+        <ul>
+          <li><a href="#">調達方針</a></li>
+          <li><a href="#">受発注窓口のご案内</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; Sample Shoji Co., Ltd. All Rights Reserved.</div>
+    <div class="demo-note">本サイトはセキュリティ製品のデモ用に作成した架空の企業サイトです。</div>
+  </div>
+</footer>
+
+<script src="jquery.min.js"></script>
+</body>
+</html>
